@@ -15,7 +15,7 @@
                     	<table width="100%" cellspacing="0" cellpadding="0">
                         	<tbody>
                             	<tr>
-                                	<td><img src="images/header-logo.png"/></td>
+                                	<td><a href="index.php"><img src="images/header-logo.png"/></a></td>
                                 </tr>
                             </tbody>
                         </table>
