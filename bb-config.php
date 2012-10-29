@@ -13,7 +13,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for bbPress */
-define( 'BBDB_NAME', 'hoboken_test' );
+define( 'BBDB_NAME', 'summit_db' );
 
 /** MySQL database username */
 define( 'BBDB_USER', 'root' );

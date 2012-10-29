@@ -155,7 +155,7 @@ $notificationcount = $friendrequestcount + $messagecount;
 
 <li><a href="<?php echo site_url() ?>/about-us/" <?php if ( is_page('about-us') || is_page('dayna-sacks') || is_page('sarah-himmelbaum')  ) { echo 'class="current"'; } ?>>About</a>
 <ul>
-<li class="line"><a href="<?php echo site_url() ?>/about-us/">Hoboken Mommies 24 &hearts; 7</a></li>
+<li class="line"><a href="<?php echo site_url() ?>/about-us/">(name here) Mommies 24 &hearts; 7</a></li>
 <li class="line"><a href="<?php echo site_url() ?>/about-us/sarah-himmelbaum/">Sarah Himmelbaum</a></li>
 </ul>
 </li>

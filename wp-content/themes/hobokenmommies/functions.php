@@ -982,7 +982,7 @@ function user_has_avatar() {
 if(is_admin()){
 require_once('logouploader/uploadlogo-options.php');
 		
-		add_role('site_administrator','Mommies247 Sites Administrator',array('read'=>true,'publish_posts'=>true,'publish_pages'=>true, 'upload_files'=>true, 'update_core'=>true, 'update_themes'=>true, 'update_plugins'=>true,'edit_plugins'=>true,'manage_options'=>true,'install_plugins'=>true, 'install_themes'=>true, 'import'=>true, 'export'=>true, 'switch_themes'=>true, 'edit_theme_options'=>true, 'edit_dashboard'=>true));	
+		/*add_role('site_administrator','Mommies247 Sites Administrator',array('read'=>true,'publish_posts'=>true,'publish_pages'=>true, 'upload_files'=>true, 'update_core'=>true, 'update_themes'=>true, 'update_plugins'=>true,'edit_plugins'=>true,'manage_options'=>true,'install_plugins'=>true, 'install_themes'=>true, 'import'=>true, 'export'=>true, 'switch_themes'=>true, 'edit_theme_options'=>true, 'edit_dashboard'=>true));	
 
 		function add_new_user_account(){
 			$username = 'siteadmin';
@@ -995,10 +995,10 @@ require_once('logouploader/uploadlogo-options.php');
 				$user->set_role('site_administrator');
 			}
 		}
-		add_action('init','add_new_user_account');
+		add_action('init','add_new_user_account');*/
 }
 
-if(current_user_can('site_administrator')){
+/*if(current_user_can('site_administrator')){
 	
 add_action( 'admin_menu', 'network_page' );
 function network_page() {
@@ -1019,6 +1019,6 @@ function network_page() {
 		<?php
 		}
 	}
-} 
+} */
 
 ?>
