@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Mommies 247 | Site List</title>
+<title>Mommies 247 | Create Site</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 
@@ -37,46 +37,58 @@
                             <td></td>
                           </tr>
                           <tr>
-                          	<td>
+                          	<td width="50%">
                                 <table width="100%" cellpadding="2">
-                                	<tr>
-                            <td>Subdomain</td>                            
-                            <td><input type="text" name="subdomain_name" size="40">.mommies247.com</td>
-                          </tr>
-                          <tr>
-                            <td>Site Title</td>
-                            <td><input type="text" name="site_title" size="40"></td>
-                          </tr>
-                          <tr>
-                            <td>Site Admin Username:</td>
-                            <td>
-                            <input type="text" name="admin_username" size="35"/>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Site Admin Password:</td>
-                            <td>
-                            <input type="password" name="admin_password" size="35"/>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Admin Email Address: </td>
-                            <td><input type="text" name="email_addr" size="35"></td>
-                          </tr>
+                                  <tr class="even">
+                                    <td>Subdomain</td>                            
+                                    <td><input type="text" name="subdomain_name" size="40">.mommies247.com</td>
+                                  </tr>
+                                  <tr class="odd">
+                                    <td>Site Title</td>
+                                    <td><input type="text" name="site_title" size="40"></td>
+                                  </tr>
+                                  <tr class="even">
+                                    <td>Site Admin Username:</td>
+                                    <td>
+                                    <input type="text" name="admin_username" size="35"/>
+                                    </td>
+                                  </tr>
+                                  <tr class="odd">
+                                    <td>Site Admin Password:</td>
+                                    <td>
+                                    <input type="password" name="admin_password" size="35"/>
+                                    </td>
+                                  </tr>
+                                  <tr class="even">
+                                    <td>Admin Email Address: </td>
+                                    <td><input type="text" name="email_addr" size="35"></td>
+                                  </tr>
                                 </table>
                             </td>
-                            <td>
+                            <td width="50%">
                                 <table width="100%">
-                                <tr>
+                                <tr class="odd">
                                   <td>Site Logo:</td>
                                   <td><input type="file" name="upload_logo" /></td>
                           		</tr>
                                 </table>
                             </td>
                           </tr>
+                          <tr>
+                          	<td class="center" colspan="2">
+                            	<table width="100%">
+                                	<tbody>
+                                    	<tr>
+                                        	<td width="100%">
+                                            	<input id="save_button" type="submit" value="Create" name="sub1">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                          </tr>
                           </tbody>
                         </table>
-                        <p><input type="submit" value="Create" name="sub1"></p>
                         </form>
                         
                     </td>
