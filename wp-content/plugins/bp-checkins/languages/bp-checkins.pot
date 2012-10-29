@@ -1,0 +1,59 @@
+# Translation of the WordPress plugin BP Check-ins by imath (twitter.com/imath).
+# Copyright (C) 2010 imath (twitter.com/imath)
+# This file is distributed under the same license as BP Check-ins package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BP Check-ins 0.1\n"
+"Report-Msgid-Bugs-To: http://imath.owni.fr\n"
+"POT-Creation-Date: 2010-07-05 15:10+0000\n"
+"PO-Revision-Date: 2010-09-26 12:53+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.1\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. #-#-#-#-#  bp-checkins.pot (BP Check-ins 0.1)  #-#-#-#-#
+
+#: bp-checkins.php:94
+msgid "Add a check-in!"
+msgstr ""
+
+#: bp-checkins.php:95
+msgid "View on map"
+msgstr ""
+
+#: bp-checkins.php:96
+msgid "Search address"
+msgstr ""
+
+#: bp-checkins.php:97
+msgid "Edit your position"
+msgstr ""
+
+#: bp-checkins.php:98
+msgid "Cancel this check-in"
+msgstr ""
+
+#: bp-checkins.php:99
+msgid "OOps, we could not geocode your address for this reason"
+msgstr ""
+
+#: bp-checkins.php:100
+msgid "type your address"
+msgstr ""
+
+#: bp-checkins.php:101
+msgid "OOps, we could not localized you, you can search for your address in the field that received the focus."
+msgstr ""
+
+#: bp-checkins.php:174
+msgid "Open the map for this update"
+msgstr ""
+
+#: bp-checkins.php:205
+msgid "Center the map on this friend"
+msgstr ""

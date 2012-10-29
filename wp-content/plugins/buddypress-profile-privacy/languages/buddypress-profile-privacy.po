@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BuddyPress Profile Privacy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-01 12:15-0800\n"
+"PO-Revision-Date: 2011-12-01 12:16-0800\n"
+"Last-Translator: modemlooper <modemlooper@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bp-profile-privacy-core.php:41
+#: includes/bp-profile-privacy-admin.php:15
+msgid "Profile Privacy Setup"
+msgstr ""
+
+#: bp-profile-privacy-core.php:83
+#, php-format
+msgid "Who can see \"%s\"?"
+msgstr ""
+
+#: bp-profile-privacy-core.php:88
+#: includes/bp-profile-privacy-admin.php:41
+msgid "Everyone"
+msgstr ""
+
+#: bp-profile-privacy-core.php:88
+msgid "My Friends"
+msgstr ""
+
+#: bp-profile-privacy-core.php:88
+msgid "Only Me"
+msgstr ""
+
+#: bp-profile-privacy-loader.php:32
+msgid "<strong>BuddyPress Profile Privacy</strong></a> requires the BuddyPress plugin to work. Please <a href=\"http://buddypress.org/download\">install BuddyPress</a> first, or <a href=\"plugins.php\">deactivate BuddyPress Profile Privacy</a>."
+msgstr ""
+
+#: bp-profile-privacy-sections.php:50
+msgid "Privacy"
+msgstr ""
+
+#: bp-profile-privacy-sections.php:114
+msgid "only show profile to friends"
+msgstr ""
+
+#: bp-profile-privacy-sections.php:116
+msgid "only show activity to friends"
+msgstr ""
+
+#: bp-profile-privacy-sections.php:118
+msgid "only show groups to friends"
+msgstr ""
+
+#: bp-profile-privacy-sections.php:120
+msgid "only show friend connections to friends"
+msgstr ""
+
+#: bp-profile-privacy-sections.php:122
+msgid "only show forum topics to friends"
+msgstr ""
+
+#: bp-profile-privacy-sections.php:125
+#: includes/bp-profile-privacy-admin.php:68
+msgid "Save Changes"
+msgstr ""
+
+#: home.php:45
+msgid "You must be friends in order to access this users activity."
+msgstr ""
+
+#: home.php:61
+msgid "You must be friends in order to access this users friends."
+msgstr ""
+
+#: home.php:73
+msgid "You must be friends in order to access this users groups."
+msgstr ""
+
+#: home.php:89
+msgid "You must be friends in order to access this users profile."
+msgstr ""
+
+#: home.php:101
+msgid "You must be friends in order to access this users forum topics."
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:31
+msgid "Who Can See?"
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:32
+msgid "Field Name"
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:41
+msgid "Friends"
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:41
+msgid "User"
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:41
+msgid "Let User Decide"
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:53
+msgid "There are no fields."
+msgstr ""
+
+#: includes/bp-profile-privacy-admin.php:63
+msgid "There are groups."
+msgstr ""
+
