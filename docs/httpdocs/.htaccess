@@ -1,0 +1,24 @@
+######### auto generated ###########
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{HTTP_HOST} ^app.mommies247.com$
+RewriteRule .* app/$0 [L]
+
+RewriteCond %{HTTP_HOST} ^franchise1.mommies247.com$
+RewriteRule .* franchise1/$0 [L]
+
+RewriteCond %{HTTP_HOST} ^franchise2.mommies247.com$
+RewriteRule .* franchise2/$0 [L]
+
+RewriteCond %{HTTP_HOST} ^franchise3.mommies247.com$
+RewriteRule .* franchise3/$0 [L]
+
+RewriteCond %{HTTP_HOST} ^franchise4.mommies247.com$
+RewriteRule .* franchise4/$0 [L]
+
+RewriteCond %{HTTP_HOST} ^franchise5.mommies247.com$
+RewriteRule .* franchise5/$0 [L]
+
+RewriteRule ^/?(.*)$ "http://%{HTTP_HOST}/index.php" [R=301,L]

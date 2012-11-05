@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^/?(.*)$ "http://hoboken.mommies247.com/$1" [R=301,L]
