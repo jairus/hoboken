@@ -1,0 +1,14 @@
+Media Temple login
+url: mediatemple.net
+Primary Domain: hobokenmommies.com
+userid: colin.kennedy@neuronglobal.com
+pass: keepoutbadguy
+
+Plesk
+url: https://216.70.71.235:8443/
+userid: colin.kennedy@neuronglobal.com
+pass: hm_mtplesk_12qwaszx
+
+Wordpress (WP-admin)
+userid: simon
+pass: hm_wpadmin_12qwaszx 
