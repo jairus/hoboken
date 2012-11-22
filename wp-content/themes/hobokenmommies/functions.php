@@ -978,47 +978,88 @@ function user_has_avatar() {
   return false;
 }
 
-/*Logo Uploader, site admin role , siteadmin user generator and site management for mommies247 created by NMG Resources and Neuron Global*/
+/*Logo Uploader, site admin role for mommies247*/
+
+/*role capabilities for website admin*/
+
+$role = get_role('website_admin');
+		
+		$role->add_cap('activate_plugins');
+		$role->add_cap('read');
+		$role->add_cap('publish_posts');
+		$role->add_cap('delete_others_pages');
+		$role->add_cap('delete_others_posts');
+		$role->add_cap('delete_pages');
+		$role->add_cap('delete_posts');
+		$role->add_cap('delete_private_pages');
+		$role->add_cap('delete_private_posts');
+		$role->add_cap('delete_published_pages');
+		$role->add_cap('delete_published_posts');
+		$role->add_cap('edit_dashboard');
+		$role->add_cap('edit_others_pages');
+		$role->add_cap('edit_others_posts');
+		$role->add_cap('edit_pages');
+		$role->add_cap('edit_posts');
+		$role->add_cap('edit_private_pages');
+		$role->add_cap('edit_private_posts');
+		$role->add_cap('edit_published_pages');
+		$role->add_cap('edit_published_posts');
+		$role->add_cap('publish_pages');
+		$role->add_cap('read_private_pages');
+		$role->add_cap('read_private_posts');
+		$role->add_cap('upload_files');
+		$role->add_cap('manage_categories');
+		$role->add_cap('manage_links');
+		$role->add_cap('remove_users');
+		$role->add_cap('delete_users');
+		$role->add_cap('add_users');
+		$role->add_cap('edit_users');
+		$role->add_cap('list_users');
+		$role->add_cap('promote_users');
+		$role->add_cap('edit_theme_options');
+		
+		
 if(is_admin()){
 require_once('logouploader/uploadlogo-options.php');
-		/*
-		add_role('site_administrator','Mommies247 Sites Administrator',array('read'=>true,'publish_posts'=>true,'publish_pages'=>true, 'upload_files'=>true, 'update_core'=>true, 'update_themes'=>true, 'update_plugins'=>true,'edit_plugins'=>true,'manage_options'=>true,'install_plugins'=>true, 'install_themes'=>true, 'import'=>true, 'export'=>true, 'switch_themes'=>true, 'edit_theme_options'=>true, 'edit_dashboard'=>true));	
+		
+		add_role('website_admin','Site Administrator');	
 
-		function add_new_user_account(){
-			$username = 'siteadmin';
-			$password = 'siteadmin';
-			$email = 'info@nmgresources.com';
-
-			if(!username_exists($username) && !email_exists($email)){
-				$user_id = wp_create_user($username, $password, $email);
-				$user = new wp_user($user_id);
-				$user->set_role('site_administrator');
-			}
-		}
-		add_action('init','add_new_user_account');*/
 }
 
-/*if(current_user_can('site_administrator')){
+
+
+if(current_user_can('website_admin')){
 	
-add_action( 'admin_menu', 'network_page' );
-function network_page() {
-	add_menu_page('Manage Network','Manage Network','manage_options','manage-network-for-sitead','new_page','','1');
+	require_once('logouploader/uploadlogo-options.php');
 	
-	function new_page(){
-		if(!current_user_can('site_administrator')){
-			wp_die(__('You do not have a sufficient permission to access this page'));		
+		function my_admin_head() {
+			$url = get_option('siteurl');
+			$dir = $url . '/wp-content/themes/hobokenmommies/';
+			echo '<link rel="stylesheet" type="text/css" href="' .$dir. '/css/adminstyle.css'. '">';
+			}
+		
+			add_action('admin_head', 'my_admin_head');
+			
+			
+			
+		function remove_submenus() {
+		  global $submenu;
+		  global $menu;
+		  unset($submenu['themes.php'][5]);
+		  unset($submenu['themes.php'][10]);
+		  
+		  
+		  $restricted = array(__('Settings'), __('Tools'));
+		  end ($menu);
+		  while (prev($menu)){
+			$value = explode(' ',$menu[key($menu)][0]);
+			if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){
+			  unset($menu[key($menu)]);}
+			}
 		}
-	?>
-    	<h1>Manage Mommies247.com Network</h1>
-    	<div class="container">
-		<div class="message-container">
-        <p>Create a New Site</p>
-        </div>
-        <?php require_once('filedumper/filedumper.php');  ?>
-        </div>
-		<?php
-		}
-	}
-} */
+		//Hook into admin menu
+		add_action('admin_menu', 'remove_submenus');
+		
+}
 
 ?>
